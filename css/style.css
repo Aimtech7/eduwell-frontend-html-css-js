@@ -438,25 +438,25 @@ footer ul li a:hover {
     }
 
     .nav__menu li:nth-child(2){
-        animation-delay: 2s;
+        animation-delay: 200ms;
     }
     .nav__menu li:nth-child(3){
-        animation-delay: 3s;
+        animation-delay: 400ms;
     }
     .nav__menu li:nth-child(4){
-        animation-delay: 4s;
+        animation-delay: 600ms;
     }
     .nav__menu li:nth-child(5){
-        animation-delay: 5s;
+        animation-delay: 800ms;
     }
     @keyframes animateNavItems{ 
         0%{
             opacity: 0;
-            transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
         }
         100%{
             opacity: 1;
-            transform: rotateZ(0deg);
+            transform: rotateZ(0deg) rotateX(0deg) scale(1);
         }
     }
 
