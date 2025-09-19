@@ -1,20 +1,46 @@
 /*===================ACHIEVEMENTS====================*/
-.about__achievements{
+
+.about__achievements {
     margin-top: 3rem;
 }
-.about__achievements-container{
+
+.about__achievements-container {
     display: grid;
     grid-template-columns: repeat(40% 60%);
     gap: 5rem;
 }
-.about__achievements-right > p{
+
+.about__achievements-right>p {
     margin: 1.5rem 2.5rem;
     color: var(--color-text2);
     line-height: 1.8;
 }
-.achievement__card{
+
+.achievement__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
+}
+
+.achievement__card {
+    background-color: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achievement__card:hover {
+    background-color: var(--color-bg2);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.achievement__icon {
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 2rem;
 }
